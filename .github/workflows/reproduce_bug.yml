@@ -1,7 +1,6 @@
 name: Reproduce problems with oascript
 
-on:
-  workflow_dispatch:
+on: push
 
 jobs:
   build:
