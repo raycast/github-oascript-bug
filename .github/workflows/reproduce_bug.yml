@@ -36,4 +36,4 @@ jobs:
           fetch-depth: 0
       - name: Execute Python
         run: |
-          python3 scripts/disk_image.py
+          python3 scripts/disk_image_sudo.py
