@@ -373,6 +373,7 @@ else
 		sleep 2 # pause to workaround occasional "Can’t get disk" (-1728) issues  
 		echo "Running AppleScript to make Finder stuff pretty: /usr/bin/osascript \"${APPLESCRIPT_FILE}\" \"${VOLUME_NAME}\""
 		
+		# run as sudo due to https://discussions.apple.com/thread/251124670
 		if sudo /usr/bin/osascript "${APPLESCRIPT_FILE}" "${VOLUME_NAME}"; then
 			# Okay, we're cool
 			true
